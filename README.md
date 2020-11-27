@@ -12,7 +12,9 @@ Similarly `dog` encodes as `36664`. (`d` as `3`, `o` as `666`, `g` as `4`).
 
 In case which nearby letters encodes with a same numbers inserts `+` between them. For example, `cat` encodes as `222+28`.
 
-Space encodes as "1".
+Space encodes as `1`.
+
+To encode numbers in front of them inserts symbol `#`. For example, `345` encodes as `#3#4#5`.
 
 ## Usage
 ### help
@@ -31,11 +33,11 @@ optional arguments:
 ```
 ### Encoding
 ```shell
-> python encoder.py "phone"
-744666+6633
+> python encoder.py "my phone is 1234"
+69991744666+6633144477771#1#2#3#4
 ```
 ### Decoding
 ```shell
-> python encoder.py -d "744666+6633"
-phone
+> python encoder.py -d "69991744666+6633144477771#1#2#3#4"
+my phone is 1234
 ```
