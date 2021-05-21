@@ -3,18 +3,41 @@
 
 import argparse
 
-DICT_PATH = ".encoder-dict.data"
-encode_d = {" ": "1"}
-decode_d = {"1": " "}
-with open(DICT_PATH) as data:
-    for line in data:
-        s = line.split()
-        encode_d[s[1]] = s[0]
-        decode_d[s[0]] = s[1]
+decode_d = {
+    "1": " ",
+    "2": "a",
+    "22": "b",
+    "222": "c",
+    "3": "d",
+    "33": "e",
+    "333": "f",
+    "4": "g",
+    "44": "h",
+    "444": "i",
+    "5": "j",
+    "55": "k",
+    "555": "l",
+    "6": "m",
+    "66": "n"
+    "666": "o",
+    "7": "p",
+    "77": "q",
+    "777": "r",
+    "7777": "s",
+    "8": "t",
+    "88": "u",
+    "888": "v",
+    "9": "w",
+    "99": "x",
+    "999": "y",
+    "9999": "z"
+}
+
+encode_d = {decode_d[k]: k for k in decode_d}
 
 
-def encode(s):
-    """Encode s."""
+def encode(s: str) -> str:
+    """Encodes s."""
     if not s:
         return ""
     enc_list = []
@@ -31,8 +54,8 @@ def encode(s):
     return enc + enc_list[-1]
 
 
-def decode(enc):
-    """Decode enc."""
+def decode(enc: str) -> str:
+    """Decodes enc."""
     s = ""
     cur = ""
     i = 0
