@@ -1,8 +1,7 @@
 # button-phone-encoder
 Utility that encodes strings to a button phone notation.
 ## About
-Converts text to a sequence of keys that you need to press on a push-button telephone to type this text.
-
+Converts text into a sequence of keys that you press on a push-button telephone to type that text.
 ## Examples
 To type symbol `a` you press key with number 2 once. So, `a` encodes as `2`
 
