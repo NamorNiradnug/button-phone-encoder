@@ -3,17 +3,17 @@ Utility that encodes strings to a button phone notation.
 ## About
 Converts text into a sequence of keys that you press on a push-button telephone to type that text.
 ## Examples
-To type symbol `a` you press key with number 2 once. So, `a` encodes as `2`
+To type symbol `a` you press key with number 2 once. So, `a` is encoded as `2`
 
-To type `e` you press key 3 twice, so it encodes as `33`.
+To type `e` you press key 3 twice, so it's encoded as `33`.
 
 Similarly `dog` encodes as `36664`. (`d` as `3`, `o` as `666`, `g` as `4`).
 
-In case which nearby letters encodes with a same numbers inserts `+` between them. For example, `cat` encodes as `222+28`.
+If adjacent letters are encoded with a same digits, a `+` is inserted between them. For example, `cat` is encoded as `222+28`.
 
 Space encodes as `1`.
 
-To encode numbers symbol `#` is inserted in front of them. For example, `345` encodes as `#3#4#5`
+To encode numbers symbol `#` is inserted in front of them. For example, `345` is encoded as `#3#4#5`
 ## Usage
 ### help
 ```shell
