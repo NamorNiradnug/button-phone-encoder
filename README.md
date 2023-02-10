@@ -11,7 +11,7 @@ Similarly `dog` encodes as `36664`. (`d` as `3`, `o` as `666`, `g` as `4`).
 
 If adjacent letters are encoded with a same digits, a `+` is inserted between them. For example, `cat` is encoded as `222+28`.
 
-Space encodes as `1`.
+Space is encoded as `1`.
 
 To encode numbers symbol `#` is inserted in front of them. For example, `345` is encoded as `#3#4#5`
 ## Usage
