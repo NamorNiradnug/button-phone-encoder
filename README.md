@@ -1,19 +1,19 @@
 # button-phone-encoder
 Utility that encodes strings to a button phone notation.
 ## About
-Converts text into a sequence of keys that you press on a push-button telephone to type that text.
+Converts text into a sequence of keys those one press on a push-button telephone to type that text.
 ## Examples
-To type symbol `a` you press key with number 2 once. So, `a` is encoded as `2`
+To type symbol `a` one press key with number 2 once. So, `a` is encoded as `2`
 
 To type `e` you press key 3 twice, so it's encoded as `33`.
 
-Similarly `dog` encodes as `36664`. (`d` as `3`, `o` as `666`, `g` as `4`).
+Similarly `dog` is encoded as `36664`. (`d` as `3`, `o` as `666`, `g` as `4`).
 
-If adjacent letters are encoded with a same digits, a `+` is inserted between them. For example, `cat` is encoded as `222+28`.
+If consecutive letters are encoded with the same digits, `+` is inserted between them. For example, `cat` is encoded as `222+28`.
 
 Space is encoded as `1`.
 
-To encode numbers symbol `#` is inserted in front of them. For example, `345` is encoded as `#3#4#5`
+To encode numbers `#` is inserted in front of them. For example, `345` is encoded as `#3#4#5`
 ## Usage
 ### help
 ```shell
